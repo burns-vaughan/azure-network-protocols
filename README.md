@@ -3,5 +3,5 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-<br><br>
+<br>
 <strong>In progress</strong>
