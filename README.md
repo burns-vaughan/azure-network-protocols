@@ -21,12 +21,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-Step 1: Create 2 virtual machines in Microsoft Azure
-Step 2: Observe ICMP traffic
-Step 3: Observe SSH traffic
-Step 4: Observe DHCP traffic
-Step 5: Observe DNS traffic
-Step 6: Observe RDP traffic
+Step 1: Create 2 virtual machines in Microsoft Azure<br>
+Step 2: Observe ICMP traffic<br>
+Step 3: Observe SSH traffic<br>
+Step 4: Observe DHCP traffic<br>
+Step 5: Observe DNS traffic<br>
+Step 6: Observe RDP traffic<br>
 
 <h3>1. Create 2 virtual machines in Microsoft Azure</h3>
 <h3>2. Observe ICMP traffic</h3>
