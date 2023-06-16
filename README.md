@@ -50,6 +50,8 @@ As a reminder you use Windows Remote Desktop, put the public IP for the VM, and 
 
 Here's a <a href="https://www.wireshark.org/download.html">link</a> to the official download page for Wireshark or just go a Google search. The main thing is ensure you install on the Windows virtual machine not your personal computer.
 
+Below is a screenshot showing the installation of WireShark <br>
+<img src="https://i.ibb.co/VVnRMwt/install-wireshark.jpg" alt="install-wireshark" border="0">
 
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
