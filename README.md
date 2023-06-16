@@ -21,6 +21,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
+Overall, we will be creating 2 VM's and using Wireshark to filter and observe traffic between them using the command line.
+
 Step 1: Create 2 virtual machines in Microsoft Azure<br>
 Step 2: Observe ICMP traffic<br>
 Step 3: Observe SSH traffic<br>
@@ -33,12 +35,16 @@ The first step is to create 2 virtual machines in Azure. If you've never created
 
 One VM should be running on Windows 10. The other should running on Linux Ubuntu. Ensure they are using the same virtual network. A virtual network will be created by default when you create your first VM. <br>
 
-So, with the second VM ensure you select the virtual network that has been created. It should select it by default. Refer to the screenshot below that shows where this setting is when creating the second VM.<br>
+So, with the second VM ensure you select the virtual network that has been created. It should select it by default.<br>
 
 It's best to wait for the first VM to be fully created before creating the second VM. That way you can be sure the virtual network has been created.
 
 <h3>2. Observe ICMP traffic</h3>
-Next, 
+Now, you should have 2 VM's. I named mine VM-1, and VM-2-Linux. Below, is a screenshot:<br>
+
+<img src="https://i.ibb.co/87zLxQY/2-vms.jpg" alt="2-vms" border="0">
+
+
 
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
