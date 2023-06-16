@@ -44,6 +44,11 @@ Now, you should have 2 VM's. I named mine VM-1, and VM-2-Linux. Below, is a scre
 
 <img src="https://i.ibb.co/87zLxQY/2-vms.jpg" alt="2-vms" border="0">
 
+Next, log into the virtual machine running Windows and download WireShark
+
+As a reminder you use Windows Remote Desktop, put the public IP for the VM, and then input your username and password.
+
+Here's a <a href="https://www.wireshark.org/download.html">link</a> to the official download page for Wireshark or just go a Google search. The main thing is ensure you install on the Windows virtual machine not your personal computer.
 
 
 <h3>3. Observe SSH traffic</h3>
