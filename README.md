@@ -18,3 +18,19 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
+
+<h2>High-Level Steps</h2>
+
+Step 1: Create 2 virtual machines in Microsoft Azure
+Step 2: Observe ICMP traffic
+Step 3: Observe SSH traffic
+Step 4: Observe DHCP traffic
+Step 5: Observe DNS traffic
+Step 6: Observe RDP traffic
+
+<h3>1. Create 2 virtual machines in Microsoft Azure</h3>
+<h3>2. Observe ICMP traffic</h3>
+<h3>3. Observe SSH traffic</h3>
+<h3>4. Observe DHCP traffic</h3>
+<h3>5. Observe DNS traffic</h3>
+<h3>6. Observe RDP traffic</h3>
