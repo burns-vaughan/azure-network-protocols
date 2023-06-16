@@ -29,13 +29,17 @@ Step 5: Observe DNS traffic<br>
 Step 6: Observe RDP traffic<br>
 
 <h3>1. Create 2 virtual machines in Microsoft Azure</h3>
-The first step is to create 2 virtual machines in Azure. If you've never created a virtual machine in Azure before refer to this project I did that shows step by step how to do it.
+The first step is to create 2 virtual machines in Azure. If you've never created a virtual machine in Azure before refer to this project I did that shows detailed step by step instructions how to do it.<br> Otherwise, refer to the steps below.
 
-One should be running on Windows 10. The other should running on Linux Ubuntu. Ensure they are using the same virtual network. A virtual network will be created by default when you create your first VM. So, with the second VM ensure you select the virtual network that has been created. It should select it by default. Screenshot shown below:
+One VM should be running on Windows 10. The other should running on Linux Ubuntu. Ensure they are using the same virtual network. A virtual network will be created by default when you create your first VM. <br>
 
+So, with the second VM ensure you select the virtual network that has been created. It should select it by default. Refer to the screenshot below that shows where this setting is when creating the second VM.<br>
 
+It's best to wait for the first VM to be fully created before creating the second VM. That way you can be sure the virtual network has been created.
 
 <h3>2. Observe ICMP traffic</h3>
+Next, 
+
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
 <h3>5. Observe DNS traffic</h3>
