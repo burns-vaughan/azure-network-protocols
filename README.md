@@ -100,6 +100,9 @@ Next we will traffic filter to VM-2 to stop ICMP traffic. This can be done a few
 Next go back to VM-1 and see what Wireshark and Powershell or the command line are showing. It should say timed out because ICMP traffic is being blocked. Here's a screenshot:
 
 <img src="https://i.ibb.co/Csgmpp0/icmp-filter2.jpg" alt="icmp-filter2" border="0">
+
+Now, disable the inbound traffic rule, and go back to VM-1 and see what happens. Typically, you have to press enter to on Powershell or the command line to get it to show.
+
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
 <h3>5. Observe DNS traffic</h3>
