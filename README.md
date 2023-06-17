@@ -75,7 +75,28 @@ We will ping VM-2 to see that it has connectivity. To that type in exactly:<br><
 ping 10.0.0.5<br><br>
 
 And hit enter. For the IP put in your private IP address for VM-2 if it's different. Below, is a screenshot that shows how it will look:<br>
-<img src="https://i.ibb.co/wKns9Q1/ping-vm-2.jpg" alt="ping-vm-2" border="0">
+<img src="https://i.ibb.co/Fm5bKGF/wireshark2.jpg" alt="wireshark2" border="0">
+
+This shows some detailed information. It shows the source IP address, and destination IP address. Ping automatically executes 4 requests. You will see that all 4 went through.
+
+An interesting exercise to do is to ping well known websites on the internet. Such as, Google.com. To do that type in: <br>
+<br>
+ping www.google.com -4
+<br>
+The -4 forces it to use ICMP traffic.
+You can see the request go from VM-1 to one of Google's servers and reply back.
+
+Next, we will do some tinkering with the firewall. To do that set up an endless ping from VM-1 to VM-2.
+In powershell or the command line type in: <br><br>
+ping 10.0.0.5 -t
+
+<br>
+The -t causes it to ping forever until you stop it or the connection is disconnected.
+
+Next we will traffic filter to VM-2 to stop ICMP traffic. This can be done a few ways. But, in this case we will do it using the network security group in Azure. To do that go to Network Security Groups for the Azure homescreen. Then click on the network security group for VM-2. Click on inbound rules on the left hand side, and give the following settings (screenshot below), leaving everything else as default: <br><br>
+
+<img src="https://i.ibb.co/7bhtJQg/icmp-filter.jpg" alt="icmp-filter" border="0">
+
 
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
