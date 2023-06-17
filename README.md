@@ -97,6 +97,9 @@ Next we will traffic filter to VM-2 to stop ICMP traffic. This can be done a few
 
 <img src="https://i.ibb.co/7bhtJQg/icmp-filter.jpg" alt="icmp-filter" border="0">
 
+Next go back to VM-1 and see what Wireshark and Powershell or the command line are showing. It should say timed out because ICMP traffic is being blocked. Here's a screenshot:
+
+<img src="https://imgur.com/a/ntMaxaK" border="0">
 
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
