@@ -63,11 +63,19 @@ Now to test the connectivity we will ping VM-2 from VM-1. To do that we need to 
 
 In my case the private IP for VM-2 is:
 
-10.0.0.4
+10.0.0.5
 
 Here's a screenshot showing where the private IP is located in Azure:<br>
 
 <img src="https://i.ibb.co/6NDsLdg/private-ip-vm-2.jpg">
+
+Next on VM-1 open up powershell or the command line. If you've never done it before go to the start menu and type in powershell, and click on it when it comes up.
+
+We will ping VM-2 to see that it has connectivity. To that type in exactly:<br><br>
+ping 10.0.0.5<br><br>
+
+And hit enter. For the IP put in your private IP address for VM-2 if it's different. Below, is a screenshot that shows how it will look:<br>
+<img src="https://i.ibb.co/wKns9Q1/ping-vm-2.jpg" alt="ping-vm-2" border="0">
 
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
