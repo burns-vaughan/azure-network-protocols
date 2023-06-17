@@ -55,7 +55,7 @@ Below is a screenshot showing the installation of WireShark <br>
 
 After it installs open Wireshark, and click the shark fin icon on the top left to start capturing packets. It will show the traffic on the network. Below, is a screenshot of how it should look:<br>
 
-<img src="https://i.ibb.co/GM5dmJJ/wireshark1.jpg" alt="wireshark1" border="0">
+<img src="https://i.ibb.co/0t91vYB/wireshark2.jpg" alt="wireshark2" border="0">
 
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
