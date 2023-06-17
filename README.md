@@ -57,6 +57,10 @@ After it installs open Wireshark, and click the shark fin icon on the top left t
 
 <img src="https://i.ibb.co/0t91vYB/wireshark2.jpg" alt="wireshark2" border="0">
 
+Filter what packets are being shown by filtering by internet control message protocol (ICMP). To do that go to the search bar at the top of Wireshark and type in ICMP and hit enter. It should show no packets of data. As you may know, ICMP is the network protocol that ping uses to test connections between computers.
+
+
+
 <h3>3. Observe SSH traffic</h3>
 <h3>4. Observe DHCP traffic</h3>
 <h3>5. Observe DNS traffic</h3>
