@@ -55,7 +55,7 @@ Below is a screenshot showing the installation of WireShark <br>
 
 After it installs open Wireshark, and click the shark fin icon on the top left to start capturing packets. It will show the traffic on the network. Below, is a screenshot of how it should look:<br>
 
-<img src="https://i.ibb.co/0t91vYB/wireshark2.jpg" alt="wireshark2" border="0">
+<img src="https://i.ibb.co/Fm5bKGF/wireshark2.jpg" alt="wireshark2" border="0">
 
 Filter what packets are being shown by filtering by internet control message protocol (ICMP). To do that go to the search bar at the top of Wireshark and type in ICMP and hit enter. It should show no packets of data. As you may know, ICMP is the network protocol that ping uses to test connections between computers.
 
@@ -75,7 +75,7 @@ We will ping VM-2 to see that it has connectivity. To that type in exactly:<br><
 ping 10.0.0.5<br><br>
 
 And hit enter. For the IP put in your private IP address for VM-2 if it's different. Below, is a screenshot that shows how it will look:<br>
-<img src="https://i.ibb.co/Fm5bKGF/wireshark2.jpg" alt="wireshark2" border="0">
+<img src="https://i.ibb.co/Fm5bKGF/ping-vm-2.jpg" alt="ping-vm-2" border="0">
 
 This shows some detailed information. It shows the source IP address, and destination IP address. Ping automatically executes 4 requests. You will see that all 4 went through.
 
