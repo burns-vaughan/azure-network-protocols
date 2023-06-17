@@ -55,7 +55,7 @@ Below is a screenshot showing the installation of WireShark <br>
 
 After it installs open Wireshark, and click the shark fin icon on the top left to start capturing packets. It will show the traffic on the network. Below, is a screenshot of how it should look:<br>
 
-<img src="https://imgur.com/a/sAMFmjj" alt="wireshark2" border="0">
+<img src="https://i.ibb.co/Fm5bKGF/wireshark2.jpg" alt="wireshark2" border="0">
 
 Filter what packets are being shown by filtering by internet control message protocol (ICMP). To do that go to the search bar at the top of Wireshark and type in ICMP and hit enter. It should show no packets of data. As you may know, ICMP is the network protocol that ping uses to test connections between computers.
 
