@@ -182,5 +182,6 @@ It can take 30 seconds or so to load the data.
 After doing that observe what you see in Wireshark. Here's a screenshot of mine:
 
 <img src="https://i.ibb.co/jVgLpqj/rdp-traffic.jpg" alt="rdp-traffic" border="0">
+<img src="https://i.ibb.co/q9Dp3BV/dns-traffic.jpg" alt="dns-traffic" border="0">
 
 There is consistent traffic being sent from the local computer to the virtual computer. Showing the constant stream of data between your local computer and the remote computer.
