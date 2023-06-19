@@ -170,3 +170,17 @@ Take a look in Wireshark and see the new DNS traffic being sent over the network
 <img src="https://i.ibb.co/q9Dp3BV/dns-traffic.jpg" alt="dns-traffic" border="0">
 
 <h3>6. Observe RDP traffic</h3>
+
+Lastly, let's take a look at Remote Desktop Protocol (RDP) traffic. As you may be aware, this is traffic between a local computer and a remote computer.
+
+To do that, change the DNS filter to:
+tcp.port == 3389
+
+By typing in the box at the top of Wireshark.
+It can take 30 seconds or so to load the data.
+
+After doing that observe what you see in Wireshark. Here's a screenshot of mine:
+
+<img src="https://i.ibb.co/jVgLpqj/rdp-traffic.jpg" alt="rdp-traffic" border="0">
+
+There is consistent traffic being sent from the local computer to the virtual computer. Showing the constant stream of data between your local computer and the remote computer.
