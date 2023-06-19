@@ -155,7 +155,18 @@ Doing so will issue a new IP address to VM-1. Wireshark will show the DHCP traff
 
 <img src="https://i.ibb.co/b7NvYMs/dhcp1.jpg" alt="dhcp1" border="0">
 
-
+When you do this it will commonly disconnect VM-1 from the network and then reconnect again. This will typically take 30 seconds, and there will be a notification on the screen to tell you it's doing so.
 
 <h3>5. Observe DNS traffic</h3>
+Now, we will observe some DNS traffic. Go into Wireshark and change the filter for DHCP to DNS by typing in DNS in the box near the top of the screen. As we have done for all of the previous filters in Wireshark.
+
+Then execute the following command in the Command Prompt or Powershell:
+nslookup www.google.com
+
+This will ask Google what the ip address info is for google.com
+
+Take a look in Wireshark and see the new DNS traffic being sent over the network.
+
+<img src="https://i.ibb.co/q9Dp3BV/dns-traffic.jpg" alt="dns-traffic" border="0">
+
 <h3>6. Observe RDP traffic</h3>
