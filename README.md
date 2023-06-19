@@ -75,7 +75,7 @@ We will ping VM-2 to see that it has connectivity. To that type in exactly:<br><
 ping 10.0.0.5<br><br>
 
 And hit enter. For the IP put in your private IP address for VM-2 if it's different. Below, is a screenshot that shows how it will look:<br>
-<img src="https://i.ibb.co/Fm5bKGF/ping-vm-2.jpg" alt="ping-vm-2" border="0">
+<img src="https://i.ibb.co/860w2zR/ping-vm2.jpg" alt="ping-vm2" border="0">
 
 This shows some detailed information. It shows the source IP address, and destination IP address. Ping automatically executes 4 requests. You will see that all 4 went through.
 
