@@ -105,7 +105,22 @@ Next go back to VM-1 and see what Wireshark and Powershell or the command line a
 Sometimes, you need to cancel the infinite ping by pressing Ctrl + c on Powershell and start it again. Now, disable the inbound traffic rule in Azure, and go back to VM-1, with the ping running, or restart the ping if you stopped it, and then see that ICMP traffic is now coming through on Wireshark and Powershell. 
 
 <h3>3. Observe SSH traffic</h3>
+Next we will Secure Socket Shell (SSH) into VM-2 from VM-1. To that we execute the following command into Powershell:
 
+ssh username@private ip address.
+The command depends on:
+The username for VM-2 and the private IP address for VM-2.
+
+In my case my username is the same as I created for VM-1 which is adminuser.
+In the network settings for VM-2 it says the private IP address is 10.0.0.5
+
+So the command I put:
+ssh adminuser@10.0.05
+
+And hit enter.
+
+It will show the following in Powershell or Command Prompt:
+<img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0">
 
 <h3>4. Observe DHCP traffic</h3>
 <h3>5. Observe DNS traffic</h3>
