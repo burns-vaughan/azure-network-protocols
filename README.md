@@ -57,7 +57,8 @@ After it installs open Wireshark, and click the shark fin icon on the top left t
 
 <img src="https://i.ibb.co/ySqPPbX/11.jpg" alt="11" border="0">
 
-Filter what packets are being shown by filtering by internet control message protocol (ICMP). To do that go to the search bar at the top of Wireshark and type in ICMP and hit enter. It should show no packets of data. As you may know, ICMP is the network protocol that ping uses to test connections between computers.
+Next, we will add a filter in Wireshark to observe connectivity. We will add an ICMP filter. As you may know ICMP is the network protocol used for the ping command. To do that go to the search bar at the top of Wireshark and type in ICMP and hit enter. It should show no packets of data. Here's a screenshot of how it will look:
+<img src="https://i.ibb.co/94WCpb3/icmp-filter.jpg" alt="icmp-filter" border="0">
 
 Now to test the connectivity we will ping VM-2 from VM-1. To do that we need to know either the private or public IP address. Since, the 2 VMs are on the same network we can use the private IP. Go into Azure and note down what the private IP is for VM-2. It's found in the network settings in Azure for VM-2. Just below, where it has the public IP.
 
