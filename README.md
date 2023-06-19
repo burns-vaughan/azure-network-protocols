@@ -33,9 +33,9 @@ Step 6: Observe RDP traffic<br>
 <h3>1. Create 2 virtual machines in Microsoft Azure</h3>
 The first step is to create 2 virtual machines in Azure. If you've never created a virtual machine in Azure before refer to <a href="https://github.com/burns-vaughan/virtual-machine-azure">this project</a> I did that shows detailed step by step instructions how to do it.<br> Otherwise, refer to the steps below.
 
-One VM should be running on Windows 10. The other should running on Linux Ubuntu. Ensure they are using the same virtual network. A virtual network will be created by default when you create your first VM. <br>
+One VM should be running on Windows 10. The other should running on Linux Ubuntu. Ensure they are using the same virtual network. A virtual network will be created by default when you create your first VM either the Windows or Ubuntu virtual machine. By default it will create a new virtual network. 
 
-So, with the second VM ensure you select the virtual network that has been created. It should select it by default.<br>
+The second VM ensure you select the virtual network that has been created. It should select it by default.<br>
 
 It's best to wait for the first VM to be fully created before creating the second VM. That way you can be sure the virtual network has been created.
 
@@ -48,7 +48,7 @@ Next, log into the virtual machine running Windows and download WireShark
 
 As a reminder you use Windows Remote Desktop, put the public IP for the VM, and then input your username and password.
 
-Here's a <a href="https://www.wireshark.org/download.html">link</a> to the official download page for Wireshark or just go a Google search. The main thing is ensure you install on the Windows virtual machine not your personal computer.
+Here's a <a href="https://www.wireshark.org/download.html">link</a> to the official download page for Wireshark or just do a Google search. The main thing is ensure you install it on the Windows virtual machine not your personal computer.
 
 Below is a screenshot showing the installation of WireShark <br>
 <img src="https://i.ibb.co/VVnRMwt/install-wireshark.jpg" alt="install-wireshark" border="0">
