@@ -102,9 +102,11 @@ Next go back to VM-1 and see what Wireshark and Powershell or the command line a
 
 <img src="https://i.ibb.co/Csgmpp0/icmp-filter2.jpg" alt="icmp-filter2" border="0">
 
-Now, disable the inbound traffic rule, and go back to VM-1 and see what happens. Typically, you have to press enter to on Powershell or the command line to get it to show.
+Sometimes, you need to cancel the infinite ping by pressing Ctrl + c on Powershell and start it again. Now, disable the inbound traffic rule in Azure, and go back to VM-1, with the ping running, or restart the ping if you stopped it, and then see that ICMP traffic is now coming through on Wireshark and Powershell. 
 
 <h3>3. Observe SSH traffic</h3>
+
+
 <h3>4. Observe DHCP traffic</h3>
 <h3>5. Observe DNS traffic</h3>
 <h3>6. Observe RDP traffic</h3>
