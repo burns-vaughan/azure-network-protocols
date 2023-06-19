@@ -145,7 +145,17 @@ You will now be on the command line for VM-1.
 <h3>4. Observe DHCP traffic</h3>
 Now, we will observe DHCP traffic. As you may know, DHCP traffic is used to assign machines an IP address. First, go into Wireshark and change the ICMP filter to dhcp by typing in dhcp at the top of Wireshark. Here's a screenshot showing how it will look. At this stage no DHCP traffic should be coming through.
 
-<img src="https://i.ibb.co/J7gQJ6J/dhcp.jpg" alt="dhcp" border="0">
+<img src="https://i.ibb.co/c8SJYTR/dhcp3.jpg" alt="dhcp3" border="0">
+
+Go into PowerShell or the Command Prompt and type in:
+
+ipconfig /renew
+
+Doing so will issue a new IP address to VM-1. Wireshark will show the DHCP traffic. Below, is a screenshot showing mine:
+
+<img src="https://i.ibb.co/b7NvYMs/dhcp1.jpg" alt="dhcp1" border="0">
+
+
 
 <h3>5. Observe DNS traffic</h3>
 <h3>6. Observe RDP traffic</h3>
