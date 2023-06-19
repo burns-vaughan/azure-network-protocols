@@ -122,6 +122,12 @@ And hit enter.
 It will show the following in Powershell or Command Prompt:
 <img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0">
 
+You then type yes and hit enter.
+
+It will then ask you for the password. Put that in and hit enter. If you run into any issues connecting via SSH to your Linux VM, then you should reset the password for your VM in Azure. As well as, ensure you are running PowerShell or the Command Prompt as an administrator. Here's a screenshot of how it will look after you log in:
+
+<img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0">
+
 <h3>4. Observe DHCP traffic</h3>
 <h3>5. Observe DNS traffic</h3>
 <h3>6. Observe RDP traffic</h3>
