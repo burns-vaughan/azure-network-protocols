@@ -127,7 +127,25 @@ You then type yes and hit enter.
 It will then ask you for the password. Put that in and hit enter. If you run into any issues connecting via SSH to your Linux VM, then you should reset the password for your VM in Azure. As well as, ensure you are running PowerShell or the Command Prompt as an administrator. Here's a screenshot of how it will look after you log in:
 
 <img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0">
+You may have noticed that in the example I used PowerShell and Command Prompt. Both work the same and you can use either or.
+
+Now, when you type anything into the command line, you can see that it's sending data from VM-1 to VM-2. This is because what we have done is access the command line for VM-2. Therefore, whenever you type something it sends the instructions from VM-1 to VM-2. Regardless, of whether you press enter on the command line or not.
+
+Try this out using a few commands and observe what you see in Wireshark. Some example commands you can try are:
+id
+uname -a 
+pwd
+
+As you may know, it's possible create, move, and edit files in the command line. If you're familiar with Linux commands feel free to tinker around a bit.
+
+After that exit the SSH connection by typing in exit and hitting enter.
+
+You will now be on the command line for VM-1.
 
 <h3>4. Observe DHCP traffic</h3>
+Now, we will observe DHCP traffic. As you may know, DHCP traffic is used to assign machines an IP address. First, go into Wireshark and change the ICMP filter to dhcp by typing in dhcp at the top of Wireshark. Here's a screenshot showing how it will look. At this stage no DHCP traffic should be coming through.
+
+<img src="https://i.ibb.co/J7gQJ6J/dhcp.jpg" alt="dhcp" border="0">
+
 <h3>5. Observe DNS traffic</h3>
 <h3>6. Observe RDP traffic</h3>
