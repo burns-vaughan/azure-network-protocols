@@ -57,8 +57,8 @@ After it installs open Wireshark, and click the shark fin icon on the top left t
 
 <kbd><img src="https://i.ibb.co/ySqPPbX/11.jpg" alt="11" border="0"></kbd><br><br>
 
-Next, we will add a filter in Wireshark to observe connectivity. We will add an ICMP filter. As you may know ICMP is the network protocol used for the ping command. To do that go to the search bar at the top of Wireshark and type in ICMP and hit enter. It should show no packets of data. Here's a screenshot of how it will look:
-<img src="https://i.ibb.co/94WCpb3/icmp-filter.jpg" alt="icmp-filter" border="0">
+Next, we will add a filter in Wireshark to observe connectivity. We will add an ICMP filter. As you may know ICMP is the network protocol used for the ping command. To do that go to the search bar at the top of Wireshark and type in ICMP and hit enter. It should show no packets of data. Here's a screenshot of how it will look:<br><br>
+<kbd><img src="https://i.ibb.co/94WCpb3/icmp-filter.jpg" alt="icmp-filter" border="0"></kbd><br><br>
 
 Now to test the connectivity we will ping VM-2 from VM-1. To do that we need to know either the private or public IP address. Since, the 2 VMs are on the same network we can use the private IP. Go into Azure and note down what the private IP is for VM-2. It's found in the network settings in Azure for VM-2. Just below, where it has the public IP.
 
@@ -66,9 +66,9 @@ In my case the private IP for VM-2 is:
 
 10.0.0.5
 
-Here's a screenshot showing where the private IP is located in Azure:<br>
+Here's a screenshot showing where the private IP is located in Azure:<br><br>
 
-<img src="https://i.ibb.co/6NDsLdg/private-ip-vm-2.jpg">
+<kbd><img src="https://i.ibb.co/6NDsLdg/private-ip-vm-2.jpg"></kbd><br><br>
 
 Next on VM-1 open up powershell or the command line. If you've never done it before go to the start menu and type in powershell, and click on it when it comes up.
 
