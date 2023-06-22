@@ -75,8 +75,8 @@ Next on VM-1 open up powershell or the command line. If you've never done it bef
 We will ping VM-2 to see that it has connectivity. To that type in exactly:<br><br>
 ping 10.0.0.5<br><br>
 
-And hit enter. For the IP put in your private IP address for VM-2 if it's different. Below, is a screenshot that shows how it will look:<br>
-<img src="https://i.ibb.co/860w2zR/ping-vm2.jpg" alt="ping-vm2" border="0">
+And hit enter. For the IP put in your private IP address for VM-2 if it's different. Below, is a screenshot that shows how it will look:<br><br>
+<kbd><img src="https://i.ibb.co/860w2zR/ping-vm2.jpg" alt="ping-vm2" border="0"></kbd><br><br>
 
 This shows some detailed information. It shows the source IP address, and destination IP address. Ping automatically executes 4 requests. You will see that all 4 went through.
 
@@ -84,7 +84,7 @@ An interesting exercise to do is to ping well known websites on the internet. Su
 <br>
 ping www.google.com -4
 <br>
-The -4 forces it to use ICMP traffic.
+The -4 forces it to use ICMP traffic.<br>
 You can see the request go from VM-1 to one of Google's servers and reply back.
 
 Next, we will do some tinkering with the firewall. To do that set up an endless ping from VM-1 to VM-2.
@@ -96,11 +96,11 @@ The -t causes it to ping forever until you stop it or the connection is disconne
 
 Next we will traffic filter to VM-2 to stop ICMP traffic. This can be done a few ways. But, in this case we will do it using the network security group in Azure. To do that go to Network Security Groups for the Azure homescreen. Then click on the network security group for VM-2. Click on inbound rules on the left hand side, and give the following settings (screenshot below), leaving everything else as default: <br><br>
 
-<img src="https://i.ibb.co/7bhtJQg/icmp-filter.jpg" alt="icmp-filter" border="0">
+<kbd><img src="https://i.ibb.co/7bhtJQg/icmp-filter.jpg" alt="icmp-filter" border="0"></kbd><br><br>
 
-Next go back to VM-1 and see what Wireshark and Powershell or the command line are showing. It should say timed out because ICMP traffic is being blocked. Here's a screenshot:
+Next go back to VM-1 and see what Wireshark and Powershell or the command line are showing. It should say timed out because ICMP traffic is being blocked. Here's a screenshot:<br><br>
 
-<img src="https://i.ibb.co/Csgmpp0/icmp-filter2.jpg" alt="icmp-filter2" border="0">
+<kbd><img src="https://i.ibb.co/Csgmpp0/icmp-filter2.jpg" alt="icmp-filter2" border="0"></kbd><br><br>
 
 Sometimes, you need to cancel the infinite ping by pressing Ctrl + c on Powershell and start it again. Now, disable the inbound traffic rule in Azure, and go back to VM-1, with the ping running, or restart the ping if you stopped it, and then see that ICMP traffic is now coming through on Wireshark and Powershell. 
 
@@ -119,14 +119,14 @@ ssh adminuser@10.0.05
 
 And hit enter.
 
-It will show the following in Powershell or Command Prompt:
-<img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0">
+It will show the following in Powershell or Command Prompt:<br><br>
+<kbd><img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0"></kbd><br><br>
 
 You then type yes and hit enter.
 
 It will then ask you for the password. Put that in and hit enter. If you run into any issues connecting via SSH to your Linux VM, then you should reset the password for your VM in Azure. As well as, ensure you are running PowerShell or the Command Prompt as an administrator. Here's a screenshot of how it will look after you log in:
 
-<img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0">
+<kbd><img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0"></kbd>
 You may have noticed that in the example I used PowerShell and Command Prompt. Both work the same and you can use either or.
 
 Now, when you type anything into the command line, you can see that it's sending data from VM-1 to VM-2. This is because what we have done is access the command line for VM-2. Therefore, whenever you type something it sends the instructions from VM-1 to VM-2. Regardless, of whether you press enter on the command line or not.
@@ -145,7 +145,7 @@ You will now be on the command line for VM-1.
 <h3>4. Observe DHCP traffic</h3>
 Now, we will observe DHCP traffic. As you may know, DHCP traffic is used to assign machines an IP address. First, go into Wireshark and change the ICMP filter to dhcp by typing in dhcp at the top of Wireshark. Here's a screenshot showing how it will look. At this stage no DHCP traffic should be coming through.
 
-<img src="https://i.ibb.co/c8SJYTR/dhcp3.jpg" alt="dhcp3" border="0">
+<kbd><img src="https://i.ibb.co/c8SJYTR/dhcp3.jpg" alt="dhcp3" border="0"></kbd><br><br>
 
 Go into PowerShell or the Command Prompt and type in:
 
