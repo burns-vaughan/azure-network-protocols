@@ -40,7 +40,7 @@ The second VM ensure you select the virtual network that has been created. It sh
 It's best to wait for the first VM to be fully created before creating the second VM. That way you can be sure the virtual network has been created.
 
 <h3>2. Observe ICMP traffic</h3>
-Now, you should have 2 VM's. I named mine VM-1, and VM-2-Linux. Below, is a screenshot:<br>
+Now, you should have 2 VM's. I named mine VM-1, and VM-2-Linux. Below, is a screenshot:<br><br>
 
 <kbd><img src="https://i.ibb.co/87zLxQY/2-vms.jpg" alt="2-vms" /></kbd><br>
 
