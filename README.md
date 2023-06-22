@@ -51,11 +51,11 @@ As a reminder you use Windows Remote Desktop, put the public IP for the VM, and 
 Here's a <a href="https://www.wireshark.org/download.html">link</a> to the official download page for Wireshark or just do a Google search. The main thing is ensure you install it on the Windows virtual machine not your personal computer.
 
 Below is a screenshot showing the installation of WireShark <br><br>
-<kbd><img src="https://i.ibb.co/FDH9w5v/install-wireshark.jpg" alt="install-wireshark" border="1"></kbd><br>
+<kbd><img src="https://i.ibb.co/FDH9w5v/install-wireshark.jpg" alt="install-wireshark" border="1"></kbd><br><br>
 
-After it installs open Wireshark, and click the shark fin icon on the top left to start capturing packets. It will show the traffic on the network. Below, is a screenshot of how it should look:<br>
+After it installs open Wireshark, and click the shark fin icon on the top left to start capturing packets. It will show the traffic on the network. Below, is a screenshot of how it should look:<br><br>
 
-<img src="https://i.ibb.co/ySqPPbX/11.jpg" alt="11" border="0">
+<kbd><img src="https://i.ibb.co/ySqPPbX/11.jpg" alt="11" border="0"></kbd><br><br>
 
 Next, we will add a filter in Wireshark to observe connectivity. We will add an ICMP filter. As you may know ICMP is the network protocol used for the ping command. To do that go to the search bar at the top of Wireshark and type in ICMP and hit enter. It should show no packets of data. Here's a screenshot of how it will look:
 <img src="https://i.ibb.co/94WCpb3/icmp-filter.jpg" alt="icmp-filter" border="0">
