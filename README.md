@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-<p align="center">[in progress]</p>
+
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
 <h2>Environments and Technologies Used</h2>
@@ -124,9 +124,9 @@ It will show the following in Powershell or Command Prompt:<br><br>
 
 You then type yes and hit enter.
 
-It will then ask you for the password. Put that in and hit enter. If you run into any issues connecting via SSH to your Linux VM, then you should reset the password for your VM in Azure. As well as, ensure you are running PowerShell or the Command Prompt as an administrator. Here's a screenshot of how it will look after you log in:
+It will then ask you for the password. Put that in and hit enter. If you run into any issues connecting via SSH to your Linux VM, then you should reset the password for your VM in Azure. As well as, ensure you are running PowerShell or the Command Prompt as an administrator. Here's a screenshot of how it will look after you log in:<br><br>
 
-<kbd><img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0"></kbd>
+<kbd><img src="https://i.ibb.co/xs9RsDg/ssh-into-vm2.jpg" alt="ssh-into-vm2" border="0"></kbd><br><br>
 You may have noticed that in the example I used PowerShell and Command Prompt. Both work the same and you can use either or.
 
 Now, when you type anything into the command line, you can see that it's sending data from VM-1 to VM-2. This is because what we have done is access the command line for VM-2. Therefore, whenever you type something it sends the instructions from VM-1 to VM-2. Regardless, of whether you press enter on the command line or not.
@@ -143,7 +143,7 @@ After that exit the SSH connection by typing in exit and hitting enter.
 You will now be on the command line for VM-1.
 
 <h3>4. Observe DHCP traffic</h3>
-Now, we will observe DHCP traffic. As you may know, DHCP traffic is used to assign machines an IP address. First, go into Wireshark and change the ICMP filter to dhcp by typing in dhcp at the top of Wireshark. Here's a screenshot showing how it will look. At this stage no DHCP traffic should be coming through.
+Now, we will observe DHCP traffic. As you may know, DHCP traffic is used to assign machines an IP address. First, go into Wireshark and change the ICMP filter to dhcp by typing in dhcp at the top of Wireshark. Here's a screenshot showing how it will look. At this stage no DHCP traffic should be coming through.<br><br>
 
 <kbd><img src="https://i.ibb.co/c8SJYTR/dhcp3.jpg" alt="dhcp3" border="0"></kbd><br><br>
 
@@ -151,23 +151,23 @@ Go into PowerShell or the Command Prompt and type in:
 
 ipconfig /renew
 
-Doing so will issue a new IP address to VM-1. Wireshark will show the DHCP traffic. Below, is a screenshot showing mine:
+Doing so will issue a new IP address to VM-1. Wireshark will show the DHCP traffic. Below, is a screenshot showing mine:<br><br>
 
-<img src="https://i.ibb.co/b7NvYMs/dhcp1.jpg" alt="dhcp1" border="0">
+<kbd><img src="https://i.ibb.co/b7NvYMs/dhcp1.jpg" alt="dhcp1" border="0"></kbd><br><br>
 
 When you do this it will commonly disconnect VM-1 from the network and then reconnect again. This will typically take 30 seconds, and there will be a notification on the screen to tell you it's doing so.
 
 <h3>5. Observe DNS traffic</h3>
 Now, we will observe some DNS traffic. Go into Wireshark and change the filter for DHCP to DNS by typing in DNS in the box near the top of the screen. As we have done for all of the previous filters in Wireshark.
 
-Then execute the following command in the Command Prompt or Powershell:
+Then execute the following command in the Command Prompt or Powershell:<br><br>
 nslookup www.google.com
 
 This will ask Google what the ip address info is for google.com
 
-Take a look in Wireshark and see the new DNS traffic being sent over the network.
+Take a look in Wireshark and see the new DNS traffic being sent over the network.<br><br>
 
-<img src="https://i.ibb.co/q9Dp3BV/dns-traffic.jpg" alt="dns-traffic" border="0">
+<kbd><img src="https://i.ibb.co/q9Dp3BV/dns-traffic.jpg" alt="dns-traffic" border="0"></kbd><br><br>
 
 <h3>6. Observe RDP traffic</h3>
 
@@ -179,8 +179,8 @@ tcp.port == 3389
 By typing in the box at the top of Wireshark.
 It can take 30 seconds or so to load the data.
 
-After doing that observe what you see in Wireshark. Here's a screenshot of mine:
+After doing that observe what you see in Wireshark. Here's a screenshot of mine:<br><br>
 
-<img src="https://i.ibb.co/jVgLpqj/rdp-traffic.jpg" alt="rdp-traffic" border="0">
+<kbd><img src="https://i.ibb.co/jVgLpqj/rdp-traffic.jpg" alt="rdp-traffic" border="0"></kbd><br><br>
 
 There is consistent traffic being sent from the local computer to the virtual computer. Showing the constant stream of data between your local computer and the remote computer.
