@@ -42,7 +42,7 @@ It's best to wait for the first VM to be fully created before creating the secon
 <h3>2. Observe ICMP traffic</h3>
 Now, you should have 2 VM's. I named mine VM-1, and VM-2-Linux. Below, is a screenshot:<br>
 
-<kbd><img src="https://i.ibb.co/87zLxQY/2-vms.jpg" alt="2-vms" /></kbd>
+<kbd><img src="https://i.ibb.co/87zLxQY/2-vms.jpg" alt="2-vms" /></kbd><br>
 
 Next, log into the virtual machine running Windows and download WireShark
 
