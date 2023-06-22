@@ -50,8 +50,8 @@ As a reminder you use Windows Remote Desktop, put the public IP for the VM, and 
 
 Here's a <a href="https://www.wireshark.org/download.html">link</a> to the official download page for Wireshark or just do a Google search. The main thing is ensure you install it on the Windows virtual machine not your personal computer.
 
-Below is a screenshot showing the installation of WireShark <br>
-<img src="https://i.ibb.co/FDH9w5v/install-wireshark.jpg" alt="install-wireshark" border="1">
+Below is a screenshot showing the installation of WireShark <br><br>
+<kbd><img src="https://i.ibb.co/FDH9w5v/install-wireshark.jpg" alt="install-wireshark" border="1"></kbd><br>
 
 After it installs open Wireshark, and click the shark fin icon on the top left to start capturing packets. It will show the traffic on the network. Below, is a screenshot of how it should look:<br>
 
